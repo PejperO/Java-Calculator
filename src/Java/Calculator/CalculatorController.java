@@ -75,29 +75,18 @@ public class CalculatorController {
     String operation(long number1, long number2, String op){
         switch (op){
             case"+":
-                if(number1 + number2 == 69)
-                    return "segggz";
-                if(number1 + number2 > 999_999_999)
-                    return "W CHUJ";
                 return String.valueOf(number1 + number2);
             case"-":
-                if(number1 - number2 == 69)
-                    return "segggz";
                 return String.valueOf(number1 - number2);
             case"×":
-                if(number1 * number2 == 69)
-                    return "segggz";
-                if(number1 * number2 > 999_999_999)
-                    return "W CHUJ";
                 return String.valueOf(number1 * number2);
             case"÷":
                 if(number2 == 0){
                     return "ERR";
                 }
-                if(number1 / number2 == 69)
-                    return "segggz";
                 return String.valueOf(number1 / number2);
+            default:
+                return "ERR";
         }
-        return "ERR";
     }
 }
